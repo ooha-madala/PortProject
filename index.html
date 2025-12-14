@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,9 +16,9 @@
 
     header {
       background: #333;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 1.8rem 1rem;
     }
 
     nav a {
@@ -27,10 +28,21 @@
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      padding: 2rem;
+      padding: 1.2rem 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 20px auto;
+    }
+
+    h2 {
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      padding-bottom: 4px;
     }
 
     .projects, .skills {
@@ -40,10 +52,23 @@
     }
 
     .card {
-      background: white;
+      background: #fff;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .card a:hover {
+      color: #007BFF;
+    }
+
+    ul {
+      margin-top: 0.5rem;
     }
 
     footer {
@@ -55,6 +80,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -73,9 +99,10 @@
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am Oohanjali Madala, a final-year Computer Science and Engineering student
-    with a strong foundation in programming and AI tools. Seeking opportunities
-    to apply technical skills and grow in the tech industry.
+    Final-year Computer Science and Engineering student with a strong foundation in programming
+and AI tools. Seeking an opportunity to apply technical skills, problem-solving abilities, and
+creativity in a dynamic and growth-oriented organization. Eager to contribute to impactful projects
+while continuing to learn and evolve in the tech industry.
   </p>
 </section>
 
@@ -98,14 +125,23 @@
 </section>
 
 <section id="projects">
-  <h2>My Projects</h2>
+  <h2>Projects</h2>
   <div class="projects">
     <div class="card">
-      <h3>Aquatic Species Identification</h3>
+      <h3>
+        <a href="https://github.com/yourusername/aquatic-species" target="_blank">
+          Aquatic Species Identification
+        </a>
+      </h3>
       <p>Object detection-based system to identify aquatic species.</p>
     </div>
+
     <div class="card">
-      <h3>Superstore Sales Analysis</h3>
+      <h3>
+        <a href="https://github.com/yourusername/superstore-powerbi" target="_blank">
+          Superstore Sales Analysis
+        </a>
+      </h3>
       <p>Power BI dashboard to optimize sales performance.</p>
     </div>
   </div>
